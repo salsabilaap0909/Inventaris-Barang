@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Data Kategori</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background: #2f3fb0;
+    color: white;
+    position: fixed;
+    padding: 20px 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.logo span {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+}
+
+.menu-item:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+.menu-item svg {
+    margin-right: 10px;
+}
+
+.admin {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.card-box {
+    background: #e9ecef;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.table thead {
+    background-color: #cfd8dc;
+}
+
+.btn-edit {
+    background: #f4d03f;
+    border: none;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+
+.btn-delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+
+    <div class="logo">
+        <!-- SVG Logo -->
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2">
+            <path d="M3 7L12 2L21 7L12 12L3 7Z"></path>
+            <path d="M3 17L12 22L21 17"></path>
+            <path d="M3 12L12 17L21 12"></path>
+        </svg>
+        <span>Inventaris<br>Barang</span>
+    </div>
+
+    <div class="menu-item">
+        <!-- dashboard icon -->
+        <svg width="20" height="20" fill="black"><rect width="20" height="20"/></svg>
+        Dashboard
+    </div>
+
+    <div class="menu-item">
+        <svg width="20" height="20" fill="black"><rect width="20" height="20"/></svg>
+        Data Barang
+    </div>
+
+    <div class="menu-item active">
+        <svg width="20" height="20" fill="black"><circle cx="10" cy="10" r="8"/></svg>
+        Kategori
+    </div>
+
+    <div class="menu-item">
+        <svg width="20" height="20" fill="black"><rect width="20" height="20"/></svg>
+        Laporan
+    </div>
+
+    <div class="menu-item">
+        <svg width="20" height="20" fill="black"><circle cx="10" cy="10" r="8"/></svg>
+        Lokasi
+    </div>
+
+    <div class="menu-item">
+        <svg width="20" height="20" fill="black"><circle cx="10" cy="10" r="8"/></svg>
+        Petugas
+    </div>
+
+    <div class="admin">
+        <svg width="40" height="40" fill="white">
+            <circle cx="20" cy="15" r="8"/>
+            <rect x="8" y="25" width="24" height="10" rx="5"/>
+        </svg>
+        <strong>Admin</strong>
+    </div>
+
+</div>
+
+<!-- Content -->
+<div class="content">
+    <div class="card-box">
+
+        <h2 class="mb-3">Data Kategori</h2>
+
+        <button class="btn btn-primary mb-3">+ Tambah Kategori</button>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nama Kategori</th>
+                    <th class="text-end">Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>Elektronik</td>
+                    <td class="text-end">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Furniture</td>
+                    <td class="text-end">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Furniture</td>
+                    <td class="text-end">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Elektronik</td>
+                    <td class="text-end">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Elektronik</td>
+                    <td class="text-end">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Hapus</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Elektronik</td>
+                    <td class="text-end">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Hapus</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>

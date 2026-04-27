@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tambah Transaksi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #efefef;
+    }
+
+    .container-box {
+      background: #f7f7f7;
+      margin: 40px auto;
+      width: 90%;
+      padding: 30px;
+      border-radius: 4px;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: gray;
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      height: 45px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .btn-group-custom {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .btn-batal {
+      background: #e0e0e0;
+      border: 1px solid #999;
+      padding: 8px 25px;
+      border-radius: 6px;
+    }
+
+    .btn-simpan {
+      background: #3498db;
+      color: white;
+      padding: 8px 25px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container-box">
+
+  <h2>Tambah Transaksi</h2>
+  <div class="subtitle">Edit/update data transaksi</div>
+
+  <form>
+    <div class="mb-3">
+      <label>Barang</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label>Kategori</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label>Lokasi</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label>Transaksi</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label>Jumlah</label>
+      <input type="text" class="form-control">
+    </div>
+
+    <div class="btn-group-custom">
+      <button type="button" class="btn btn-batal">Batal</button>
+      <button type="submit" class="btn btn-simpan">Simpan</button>
+    </div>
+  </form>
+
+</div>
+
+</body>
+</html>
