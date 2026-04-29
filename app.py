@@ -20,6 +20,62 @@ mysql = MySQL(app)
 @app.route('/')
 def index():
     return render_template('admin/dashboard_admin.html')
+    
+@app.route('/data_barang')
+def data_barang():
+    return render_template('admin/data_barang.html')
+
+@app.route('/data_katagori')
+def data_katagori():
+    return render_template('admin/data_katagori.html')
+
+@app.route('/data_laporan')
+def data_laporan():
+    return render_template('admin/data_laporann.html')
+
+@app.route('/data_lokasi')
+def data_lokasi():
+    return render_template('admin/data_lokasi.html')
+
+@app.route('/data_petugas')
+def data_petugas():
+    return render_template('admin/data_petugas.html')
+
+@app.route('/edit_data_barang')
+def edit_data_barang():
+    return render_template('admin/edit_data_barang.html')
+
+@app.route('/edit_data_katagori')
+def edit_data_katagori():
+    return render_template('admin/edit_data_katagori.html')
+
+@app.route('/edit_data_lokasi')
+def edit_data_lokasi():
+    return render_template('admin/edit_data_lokasin.html')
+
+@app.route('/edit_data_petugas')
+def edit_data_petugas():
+    return render_template('admin/edit_data_petugas.html')
+
+@app.route('/login_admin')
+def login_admin():
+    return render_template('admin/login_admin.html')
+
+@app.route('/tambah_barang')
+def tambah_barang():
+    return render_template('admin/tambah_barang.html')
+
+@app.route('/tambah_data_lokasi')
+def tambah_data_lokasi():
+    return render_template('admin/tambah_data_lokasi.html')
+
+@app.route('/tambah_data_petugas')
+def tambah_data_petugas():
+    return render_template('admin/tambah_data_petugas.html')
+
+@app.route('/tambah_katagori')
+def tambah_katagori():
+    return render_template('admin/tambah_katagori.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
