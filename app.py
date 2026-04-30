@@ -45,9 +45,9 @@ def data_petugas():
 def edit_data_barang():
     return render_template('admin/edit_data_barang.html')
 
-@app.route('/edit_data_katagori')
-def edit_data_katagori():
-    return render_template('admin/edit_data_katagori.html')
+@app.route('/edit_data_kategori')
+def edit_data_kategori():
+    return render_template('admin/edit_data_kategori.html')
 
 @app.route('/edit_data_lokasi')
 def edit_data_lokasi():
@@ -73,9 +73,9 @@ def tambah_data_lokasi():
 def tambah_data_petugas():
     return render_template('admin/tambah_data_petugas.html')
 
-@app.route('/tambah_katagori')
-def tambah_katagori():
-    return render_template('admin/tambah_katagori.html')
+@app.route('/tambah_kategori')
+def tambah_kategori():
+    return render_template('admin/tambah_kategori.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
